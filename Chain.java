@@ -207,7 +207,7 @@ public class Chain {
         if (borderPixel(i+1, j+1) && !flag && visited[i+1][j+1] == 0) {
             i = i + 1;
             j = j + 1;
-            System.out.print("1 ");
+            System.out.print("7 ");
             perimeter += Math.sqrt(2);
             flag = true;
             index[0] = i;
@@ -217,7 +217,7 @@ public class Chain {
         // periksa selatan
         if (borderPixel(i+1, j) && !flag && visited[i+1][j] == 0) {
             i = i + 1;
-            System.out.print("2 ");
+            System.out.print("6 ");
             perimeter += 1;
             flag = true;
             index[0] = i;
@@ -228,7 +228,7 @@ public class Chain {
         if (borderPixel(i+1, j-1) && !flag && visited[i+1][j-1] == 0) {
             i = i + 1;
             j = j - 1;
-            System.out.print("3 ");
+            System.out.print("5 ");
             perimeter += Math.sqrt(2);
             flag = true;
             index[0] = i;
@@ -249,7 +249,7 @@ public class Chain {
         if (borderPixel(i-1, j-1) && !flag && visited[i-1][j-1] == 0) {
             i = i - 1;
             j = j - 1;
-            System.out.print("5 ");
+            System.out.print("3 ");
             perimeter += Math.sqrt(2);
             flag = true;
             index[0] = i;
@@ -259,7 +259,7 @@ public class Chain {
         // periksa utara
         if (borderPixel(i-1, j) && !flag && visited[i-1][j] == 0) {
             i = i - 1;
-            System.out.print("6 ");
+            System.out.print("2 ");
             perimeter += 1;
             flag = true;
             index[0] = i;
@@ -270,7 +270,7 @@ public class Chain {
         if (borderPixel(i-1, j+1) && !flag && visited[i-1][j+1] == 0) {
             i = i - 1;
             j = j + 1;
-            System.out.print("7 ");
+            System.out.print("1 ");
             perimeter += Math.sqrt(2);
             flag = true;
             index[0] = i;
